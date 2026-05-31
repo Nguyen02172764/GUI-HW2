@@ -1,4 +1,11 @@
-/*Andrew Nguyen*/
+/*
+File: pacific.css
+GUI Assignment: Edit only this CSS file to style contents of index.html
+Andrew Nguyen, UMass Lowell Computer Science, Andrew_Nguyen4@student.uml.edu
+Copyright (c) 2026 by Andrew. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AN on May 31, 2026 at 6:44 PM
+*/
 /*  Making HTML5 layout elements behave like block elements.
     Helps older browsers display the sections.*/
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
