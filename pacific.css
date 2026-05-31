@@ -1,0 +1,125 @@
+/*Andrew Nguyen*/
+/*  Making HTML5 layout elements behave like block elements.
+    Helps older browsers display the sections.*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+/*  Styling the entire page background/default text.
+    The gradient image repeats across the top and the solid blue color continues below.*/
+body {
+    margin: 0;
+    background: #00569f url(ptrbackground.jpg) repeat-x;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  Centering main page container.*/
+#wrapper {
+    width: 80%;
+    min-width: 600px;
+    margin: 20px auto;
+    background: #90c7e3;
+}
+
+/*  Styling the top banner.
+    The dark blue background holds the site title and sunset image set to the right.*/
+header {
+    color: white;
+    background: #000033 url(sunset.jpg) no-repeat right center;
+}
+
+/*  Styling main page title.
+    Removing extra default margin/adds spacing inside the header.*/
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+/*  Giving the main headers a serif font.*/
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/*  Styles the section heading in the content area.*/
+h2 {
+    color: #3399CC;
+}
+
+/*  Creating the left navigation column.
+    The nav has a fixed width while the main content changes with page size.*/
+nav {
+    float: left;
+    width: 160px;
+    padding: 20px 5px 5px 20px;
+    font-weight: bold;
+}
+
+/*  Removing default bullets and spacing from the navigation list.*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+/*  Removing underlines from navigation links.*/
+nav a {
+    color: #000033;
+    text-decoration: none;
+}
+
+/*  Styling links that have already been visited.*/
+nav a:visited {
+    color: #344873;
+}
+
+/*  Changing the navigation link color when the mouse hovers it.*/
+nav a:hover {
+    color: white;
+}
+
+/*  Styling the main white content area.
+    The left margin creates room for navigation column.*/
+#content {
+    margin-left: 190px;
+    padding: 1px 20px 20px 30px;
+    background: white;
+}
+
+/*  Floats the coast image to the left so text and list can sit next to it.*/
+#content img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/*  Using provided marker image as the custom bullet for the content list.*/
+#content ul {
+    list-style-image: url(marker.gif);
+    list-style-position: inside;
+}
+
+/*  Making the resort name and definition terms darker.*/
+.resort,
+dt {
+    color: #000033;
+}
+
+/*  Making the resort name stand out in the main paragraph.*/
+.resort {
+    font-weight: bold;
+}
+
+/*  Making the contact information slightly smaller than the normal page text.*/
+#contact {
+    font-size: 90%;
+}
+
+/*  Styling the footer at the bottom of the white content area.
+    The margin keeps it aligned with main content instead of under nav.*/
+footer {
+    margin-left: 190px;
+    padding: 20px;
+    background: white;
+    font: italic 75% Georgia, "Times New Roman", serif;
+}
